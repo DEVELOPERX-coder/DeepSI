@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture - DeepSI</title>
+    <link rel="stylesheet" href="/public/css/main.css" />
+    <link rel="stylesheet" href="/public/css/courses.css" />
+    <link rel="icon" type="image/x-icon" href="/public/images/Deep_SI.ico" />
+  </head>
+  <body>
+    <div class="app-container lecture-page">
+      <!-- Header -->
+      <header>
+        <div class="logo-container">
+          <a href="/">
+            <img src="/public/images/logo.png" alt="DeepSI Logo" class="logo" />
+            <span>DeepSI</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/views/donation/index.html" class="nav-link">Donate</a>
+          <a href="/views/articles/index.html" class="nav-link">Article</a>
+          <a href="/views/courses/index.html" class="nav-link active"
+            >Lessons</a
+          >
+        </nav>
+      </header>
+
+      <!-- Course Navigation -->
+      <div class="course-breadcrumb">
+        <a href="/views/courses/index.html" class="breadcrumb-item">Courses</a>
+        <span class="breadcrumb-separator">›</span>
+        <a id="course-link" href="#" class="breadcrumb-item">Course Name</a>
+      </div>
+
+      <!-- Lecture Content -->
+      <main class="lecture-container">
+        <div class="video-container">
+          <video id="lecture-video" controls>
+            <source src="" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="lecture-info">
+          <h1 id="lecture-title">Lecture Title</h1>
+          <div id="lecture-description">
+            <!-- Lecture description will be loaded here dynamically -->
+          </div>
+        </div>
+
+        <div class="lecture-tabs">
+          <button class="tab-btn active" data-tab="description">
+            Description
+          </button>
+          <button class="tab-btn" data-tab="resources">Resources</button>
+          <button class="tab-btn" data-tab="community">Community</button>
+        </div>
+
+        <div class="tab-content active" id="description-tab">
+          <div id="description-content">
+            <!-- Lecture description will be copied here -->
+          </div>
+        </div>
+
+        <div class="tab-content" id="resources-tab">
+          <h3>Lecture Resources</h3>
+          <ul id="resources-list">
+            <!-- Resources will be loaded here dynamically -->
+            <li>No resources available for this lecture.</li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="community-tab">
+          <h3>Comments</h3>
+          <div class="comment-form-container" id="comment-form-container">
+            <!-- Comment form will be added here if logged in -->
+          </div>
+          <div class="comments-list" id="comments-list">
+            <!-- Comments will be loaded here dynamically -->
+          </div>
+        </div>
+      </main>
+
+      <!-- Lecture Navigation -->
+      <div class="lecture-navigation">
+        <a id="prev-lecture" href="#" class="nav-button disabled">
+          <span class="icon">‹</span> Prev
+        </a>
+        <a id="next-lecture" href="#" class="nav-button">
+          Next <span class="icon">›</span>
+        </a>
+      </div>
+
+      <!-- Course Curriculum Sidebar -->
+      <aside class="curriculum-sidebar">
+        <div class="roadmap-header">
+          <h3>RoadMap</h3>
+        </div>
+        <div class="curriculum-sections" id="sidebar-curriculum">
+          <!-- Course curriculum will be loaded here dynamically -->
+          <div class="loading">Loading curriculum...</div>
+        </div>
+      </aside>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-content">
+          <p>&copy;Copyright Apr 2025 DeepSI GNU</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/public/js/main.js"></script>
+    <script src="/public/js/courses.js"></script>
+  </body>
+</html>

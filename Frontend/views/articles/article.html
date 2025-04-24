@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article - DeepSI</title>
+    <link rel="stylesheet" href="/public/css/main.css" />
+    <link rel="stylesheet" href="/public/css/articles.css" />
+    <link rel="icon" type="image/x-icon" href="/public/images/Deep_SI.ico" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header -->
+      <header>
+        <div class="logo-container">
+          <a href="/">
+            <img src="/public/images/logo.png" alt="DeepSI Logo" class="logo" />
+            <span>DeepSI</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/public/donation/index.html" class="nav-link">Donate</a>
+          <a href="/public/articles/index.html" class="nav-link active"
+            >Article</a
+          >
+          <a href="/public/courses/index.html" class="nav-link">Lessons</a>
+        </nav>
+      </header>
+
+      <!-- Article Content -->
+      <main class="article-container">
+        <div class="article-header">
+          <div class="article-metadata">
+            <span id="article-category">Category</span>
+            <span id="article-date">Date</span>
+          </div>
+          <h1 id="article-title">Article Title</h1>
+          <div class="article-author">
+            <img
+              id="author-avatar"
+              src="/public/images/default-avatar.png"
+              alt="Author"
+            />
+            <span id="author-name">Author Name</span>
+          </div>
+        </div>
+
+        <div class="article-content" id="article-content">
+          <!-- Article content will be loaded here dynamically -->
+          <div class="loading">Loading article...</div>
+        </div>
+
+        <div class="article-actions">
+          <button id="like-btn" class="btn btn-outlined">
+            <span class="icon">♥</span> Like
+          </button>
+          <span id="likes-count">0 likes</span>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="comments-section">
+          <h3>Comments</h3>
+          <div class="comment-form-container" id="comment-form-container">
+            <!-- Comment form will be added here if logged in -->
+          </div>
+          <div class="comments-list" id="comments-list">
+            <!-- Comments will be loaded here dynamically -->
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-content">
+          <p>&copy;Copyright Apr 2025 DeepSI GNU</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/public/js/main.js"></script>
+    <script src="/public/js/articles.js"></script>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeepSI - Learning Platform</title>
+    <link rel="stylesheet" href="/public/css/main.css" />
+    <link rel="icon" type="image/x-icon" href="/public/images/Deep_SI.ico" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header -->
+      <header>
+        <div class="logo-container">
+          <a href="/">
+            <img src="public/images/logo.png" alt="DeepSI Logo" class="logo" />
+            <span>DeepSI</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="views/donation/index.html" class="nav-link">Donate</a>
+          <a href="views/articles/index.html" class="nav-link">Article</a>
+          <a href="views/courses/index.html" class="nav-link">Lessons</a>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Expand Your Knowledge</h1>
+          <p>
+            Learn programming, technology, and more with our comprehensive
+            courses and articles.
+          </p>
+          <div class="hero-buttons">
+            <a href="/views/courses/index.html" class="btn btn-primary"
+              >Explore Courses</a
+            >
+            <a href="/views/articles/index.html" class="btn btn-secondary"
+              >Read Articles</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Courses -->
+      <section class="featured-courses">
+        <h2>Featured Courses</h2>
+        <div class="course-grid" id="featured-courses-container">
+          <!-- Courses will be loaded here dynamically -->
+          <div class="loading">Loading courses...</div>
+        </div>
+      </section>
+
+      <!-- Latest Articles -->
+      <section class="latest-articles">
+        <h2>Latest Articles</h2>
+        <div class="article-grid" id="latest-articles-container">
+          <!-- Articles will be loaded here dynamically -->
+          <div class="loading">Loading articles...</div>
+        </div>
+      </section>
+
+      <!-- Recent Donations -->
+      <section class="recent-donations">
+        <h2>Appreciated Donations</h2>
+        <div class="donations-container" id="recent-donations-container">
+          <!-- Donations will be loaded here dynamically -->
+          <div class="loading">Loading donations...</div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-content">
+          <p>&copy;Copyright Apr 2025 DeepSI GNU</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Auth Modal -->
+    <div class="modal" id="auth-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="auth-tabs">
+          <button class="tab-btn active" data-tab="login">Login</button>
+          <button class="tab-btn" data-tab="signup">Sign Up</button>
+        </div>
+        <div class="tab-content active" id="login-tab">
+          <form id="login-form">
+            <div class="form-group">
+              <label for="login-username">Username</label>
+              <input type="text" id="login-username" name="username" required />
+            </div>
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input
+                type="password"
+                id="login-password"
+                name="password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+          </form>
+        </div>
+        <div class="tab-content" id="signup-tab">
+          <form id="signup-form">
+            <div class="form-group">
+              <label for="signup-fullname">Full Name</label>
+              <input
+                type="text"
+                id="signup-fullname"
+                name="full_name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="signup-username">Username</label>
+              <input
+                type="text"
+                id="signup-username"
+                name="username"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="signup-email">Email</label>
+              <input type="email" id="signup-email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="signup-password">Password</label>
+              <input
+                type="password"
+                id="signup-password"
+                name="password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/public/js/main.js"></script>
+    <script src="/public/js/auth.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course - DeepSI</title>
+    <link rel="stylesheet" href="/public/css/main.css" />
+    <link rel="stylesheet" href="/public/css/courses.css" />
+    <link rel="icon" type="image/x-icon" href="/public/images/Deep_SI.ico" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header -->
+      <header>
+        <div class="logo-container">
+          <a href="/">
+            <img src="/public/images/logo.png" alt="DeepSI Logo" class="logo" />
+            <span>DeepSI</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/views/donation/index.html" class="nav-link">Donate</a>
+          <a href="/views/articles/index.html" class="nav-link">Article</a>
+          <a href="/views/lessons/index.html" class="nav-link active"
+            >Lessons</a
+          >
+        </nav>
+      </header>
+
+      <!-- Course Details -->
+      <main class="course-container">
+        <div class="course-header">
+          <div class="course-thumbnail">
+            <img
+              id="course-image"
+              src="/public/images/thumbnails/placeholder.jpg"
+              alt="Course Thumbnail"
+            />
+          </div>
+          <div class="course-info">
+            <div class="course-metadata">
+              <span id="course-category">Category</span>
+              <span id="course-duration">Duration</span>
+            </div>
+            <h1 id="course-title">Course Title</h1>
+            <div class="course-instructor">
+              <img
+                id="instructor-avatar"
+                src="/public/images/default-avatar.jpg"
+                alt="Instructor"
+              />
+              <span id="instructor-name">Instructor Name</span>
+            </div>
+            <div class="enrollment-info" id="enrollment-info">
+              <!-- Enrollment status/button will be added here dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <div class="course-description">
+          <h2>About This Course</h2>
+          <div id="course-description-content">
+            <!-- Course description will be loaded here dynamically -->
+          </div>
+        </div>
+
+        <div class="course-curriculum">
+          <h2>Course Content</h2>
+          <div class="curriculum-sections" id="curriculum-sections">
+            <!-- Course sections and lectures will be loaded here dynamically -->
+            <div class="loading">Loading curriculum...</div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-content">
+          <p>&copy;Copyright Apr 2025 DeepSI GNU</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/public/js/main.js"></script>
+    <script src="/public/js/courses.js"></script>
+  </body>
+</html>

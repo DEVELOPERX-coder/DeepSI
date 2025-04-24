@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles - DeepSI</title>
+    <link rel="stylesheet" href="/public/css/main.css" />
+    <link rel="stylesheet" href="/public/css/articles.css" />
+    <link rel="icon" type="image/x-icon" href="/public/images/Deep_SI.ico" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header -->
+      <header>
+        <div class="logo-container">
+          <a href="/">
+            <img src="/public/images/logo.png" alt="DeepSI Logo" class="logo" />
+            <span>DeepSI</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/views/donation/index.html" class="nav-link">Donate</a>
+          <a href="/views/articles/index.html" class="nav-link active"
+            >Article</a
+          >
+          <a href="/views/courses/index.html" class="nav-link">Lessons</a>
+        </nav>
+      </header>
+
+      <!-- Articles Section -->
+      <main class="articles-container">
+        <div class="articles-header">
+          <h1>Articles</h1>
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-articles"
+              placeholder="Search articles..."
+            />
+            <button id="search-btn" class="btn">Search</button>
+          </div>
+        </div>
+
+        <div class="category-filter">
+          <span>Category:</span>
+          <select id="category-filter">
+            <option value="">All Categories</option>
+            <!-- Categories will be loaded dynamically -->
+          </select>
+        </div>
+
+        <div class="articles-grid" id="articles-container">
+          <!-- Articles will be loaded here dynamically -->
+          <div class="loading">Loading articles...</div>
+        </div>
+
+        <div class="pagination" id="pagination">
+          <!-- Pagination controls will be added here -->
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-content">
+          <p>&copy;Copyright Apr 2025 DeepSI GNU</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/public/js/main.js"></script>
+    <script src="/public/js/articles.js"></script>
+  </body>
+</html>

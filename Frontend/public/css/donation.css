@@ -1,0 +1,156 @@
+.donation-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.donation-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.donation-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.donation-header p {
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.donation-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.donation-form-container {
+  flex: 1;
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.donation-form-container h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.donation-amounts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.amount-btn {
+  flex: 1;
+  padding: 0.75rem;
+  background-color: var(--darker-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.amount-btn:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.amount-btn:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.amount-btn.active {
+  background-color: var(--primary-color);
+  color: #121212;
+  border-color: var(--primary-color);
+}
+
+.anonymous-option {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.toggle-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-label {
+  padding: 0.25rem 0.75rem;
+  background-color: var(--darker-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.toggle input:checked ~ .toggle-label {
+  background-color: var(--primary-color);
+  color: #121212;
+  border-color: var(--primary-color);
+}
+
+.donation-message {
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.recent-donations {
+  flex: 1;
+}
+
+.recent-donations h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.donations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.donation-item {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.donation-name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.donation-amount {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.donation-message {
+  margin-top: 0.75rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .donation-content {
+    flex-direction: column;
+  }
+}

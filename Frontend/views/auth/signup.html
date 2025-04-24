@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - DeepSI</title>
+    <link rel="stylesheet" href="/public/css/main.css" />
+    <link rel="stylesheet" href="/public/css/auth.css" />
+    <link rel="icon" type="image/x-icon" href="/public/images/Deep_SI.ico" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header -->
+      <header>
+        <div class="logo-container">
+          <a href="/">
+            <img src="/public/images/logo.png" alt="DeepSI Logo" class="logo" />
+            <span>DeepSI</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/views/donation/index.html" class="nav-link">Donate</a>
+          <a href="/views/articles/index.html" class="nav-link">Article</a>
+          <a href="/views/courses/index.html" class="nav-link">Lessons</a>
+        </nav>
+      </header>
+
+      <!-- Sign Up Form -->
+      <main class="auth-container">
+        <div class="auth-form-container">
+          <h2>Create an Account</h2>
+          <form id="signup-form" class="auth-form">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" name="full_name" required />
+            </div>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Sign Up</button>
+            </div>
+            <div class="form-footer">
+              <p>
+                Already have an account?
+                <a href="/views/auth/login">Login</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-content">
+          <p>&copy;Copyright Apr 2025 DeepSI GNU</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/public/js/auth.js"></script>
+  </body>
+</html>

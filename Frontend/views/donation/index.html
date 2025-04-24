@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate - DeepSI</title>
+    <link rel="stylesheet" href="/public/css/main.css" />
+    <link rel="stylesheet" href="/public/css/donation.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/public/images/favicon_io/favicon.ico"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header -->
+      <header>
+        <div class="logo-container">
+          <a href="/">
+            <img src="/public/images/logo.png" alt="DeepSI Logo" class="logo" />
+            <span>DeepSI</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/views/donation/index.html" class="nav-link active"
+            >Donate</a
+          >
+          <a href="/views/articles/index.html" class="nav-link">Article</a>
+          <a href="/views/lessons/index.html" class="nav-link">Lessons</a>
+        </nav>
+      </header>
+
+      <!-- Donation Content -->
+      <main class="donation-container">
+        <div class="donation-header">
+          <h1>Support DeepSI</h1>
+          <p>
+            Your contributions help us create more educational content and keep
+            our platform accessible to everyone.
+          </p>
+        </div>
+
+        <div class="donation-content">
+          <div class="donation-form-container">
+            <h2>Make a Donation</h2>
+            <div class="donation-amounts">
+              <button class="amount-btn" data-amount="5">5$</button>
+              <button class="amount-btn" data-amount="10">10$</button>
+              <button class="amount-btn" data-amount="15">15$</button>
+              <button class="amount-btn" data-amount="20">20$</button>
+            </div>
+
+            <form id="donation-form" class="donation-form">
+              <div class="form-group">
+                <label for="email">Gmail</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" name="message" rows="3"></textarea>
+              </div>
+              <div class="form-group anonymous-option">
+                <label>Anonymous</label>
+                <div class="toggle-container">
+                  <label class="toggle">
+                    <input type="radio" name="anonymous" value="yes" />
+                    <span class="toggle-label">Yes</span>
+                  </label>
+                  <label class="toggle">
+                    <input type="radio" name="anonymous" value="no" checked />
+                    <span class="toggle-label">No</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary">Donate</button>
+              </div>
+            </form>
+
+            <div class="donation-message">
+              <p>You can also Give Resources To Someone in need Around you</p>
+              <p>
+                We all are not same, but should be treated at same living
+                standards
+              </p>
+            </div>
+          </div>
+
+          <div class="recent-donations">
+            <h2>Appreciated Donations</h2>
+            <div class="donations-list" id="donations-list">
+              <!-- Donations will be loaded here dynamically -->
+              <div class="loading">Loading donations...</div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-content">
+          <p>&copy;Copyright Apr 2025 DeepSI GNU</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/public/js/main.js"></script>
+    <script src="/public/js/donation.js"></script>
+  </body>
+</html>
